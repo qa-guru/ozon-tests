@@ -1,0 +1,315 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "suggestedTapTags": {
+                "items": [
+                    {
+                        "title": " tab",
+                        "cellTrackingInfo": {
+                            "id": " tab",
+                            "type": "suggest",
+                            "index": 1,
+                            "suggestType": "autocomplete",
+                            "searchString": "lenovo",
+                            "suggestValue": " tab"
+                        }
+                    },
+                    {
+                        "title": " k13",
+                        "cellTrackingInfo": {
+                            "id": " k13",
+                            "type": "suggest",
+                            "index": 2,
+                            "suggestType": "autocomplete",
+                            "searchString": "lenovo",
+                            "suggestValue": " k13"
+                        }
+                    },
+                    {
+                        "title": " k12",
+                        "cellTrackingInfo": {
+                            "id": " k12",
+                            "type": "suggest",
+                            "index": 3,
+                            "suggestType": "autocomplete",
+                            "searchString": "lenovo",
+                            "suggestValue": " k12"
+                        }
+                    },
+                    {
+                        "title": " legion",
+                        "cellTrackingInfo": {
+                            "id": " legion",
+                            "type": "suggest",
+                            "index": 4,
+                            "suggestType": "autocomplete",
+                            "searchString": "lenovo",
+                            "suggestValue": " legion"
+                        }
+                    },
+                    {
+                        "title": " планшет",
+                        "cellTrackingInfo": {
+                            "id": " планшет",
+                            "type": "suggest",
+                            "index": 5,
+                            "suggestType": "autocomplete",
+                            "searchString": "lenovo",
+                            "suggestValue": " планшет"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "suggestedTapTags"
+    ],
+    "properties": {
+        "suggestedTapTags": {
+            "$id": "#/properties/suggestedTapTags",
+            "type": "object",
+            "title": "The suggestedTapTags schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "items": [
+                        {
+                            "title": " tab",
+                            "cellTrackingInfo": {
+                                "id": " tab",
+                                "type": "suggest",
+                                "index": 1,
+                                "suggestType": "autocomplete",
+                                "searchString": "lenovo",
+                                "suggestValue": " tab"
+                            }
+                        },
+                        {
+                            "title": " k13",
+                            "cellTrackingInfo": {
+                                "id": " k13",
+                                "type": "suggest",
+                                "index": 2,
+                                "suggestType": "autocomplete",
+                                "searchString": "lenovo",
+                                "suggestValue": " k13"
+                            }
+                        },
+                        {
+                            "title": " k12",
+                            "cellTrackingInfo": {
+                                "id": " k12",
+                                "type": "suggest",
+                                "index": 3,
+                                "suggestType": "autocomplete",
+                                "searchString": "lenovo",
+                                "suggestValue": " k12"
+                            }
+                        },
+                        {
+                            "title": " legion",
+                            "cellTrackingInfo": {
+                                "id": " legion",
+                                "type": "suggest",
+                                "index": 4,
+                                "suggestType": "autocomplete",
+                                "searchString": "lenovo",
+                                "suggestValue": " legion"
+                            }
+                        },
+                        {
+                            "title": " планшет",
+                            "cellTrackingInfo": {
+                                "id": " планшет",
+                                "type": "suggest",
+                                "index": 5,
+                                "suggestType": "autocomplete",
+                                "searchString": "lenovo",
+                                "suggestValue": " планшет"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "items"
+            ],
+            "properties": {
+                "items": {
+                    "$id": "#/properties/suggestedTapTags/properties/items",
+                    "type": "array",
+                    "title": "The items schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "title": " tab",
+                                "cellTrackingInfo": {
+                                    "id": " tab",
+                                    "type": "suggest",
+                                    "index": 1,
+                                    "suggestType": "autocomplete",
+                                    "searchString": "lenovo",
+                                    "suggestValue": " tab"
+                                }
+                            },
+                            {
+                                "title": " k13",
+                                "cellTrackingInfo": {
+                                    "id": " k13",
+                                    "type": "suggest",
+                                    "index": 2,
+                                    "suggestType": "autocomplete",
+                                    "searchString": "lenovo",
+                                    "suggestValue": " k13"
+                                }
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/suggestedTapTags/properties/items/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/suggestedTapTags/properties/items/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "title": " tab",
+                                        "cellTrackingInfo": {
+                                            "id": " tab",
+                                            "type": "suggest",
+                                            "index": 1,
+                                            "suggestType": "autocomplete",
+                                            "searchString": "lenovo",
+                                            "suggestValue": " tab"
+                                        }
+                                    }
+                                ],
+                                "required": [
+                                    "title",
+                                    "cellTrackingInfo"
+                                ],
+                                "properties": {
+                                    "title": {
+                                        "$id": "#/properties/suggestedTapTags/properties/items/items/anyOf/0/properties/title",
+                                        "type": "string",
+                                        "title": "The title schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            " tab"
+                                        ]
+                                    },
+                                    "cellTrackingInfo": {
+                                        "$id": "#/properties/suggestedTapTags/properties/items/items/anyOf/0/properties/cellTrackingInfo",
+                                        "type": "object",
+                                        "title": "The cellTrackingInfo schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "id": " tab",
+                                                "type": "suggest",
+                                                "index": 1,
+                                                "suggestType": "autocomplete",
+                                                "searchString": "lenovo",
+                                                "suggestValue": " tab"
+                                            }
+                                        ],
+                                        "required": [
+                                            "id",
+                                            "type",
+                                            "index",
+                                            "suggestType",
+                                            "searchString",
+                                            "suggestValue"
+                                        ],
+                                        "properties": {
+                                            "id": {
+                                                "$id": "#/properties/suggestedTapTags/properties/items/items/anyOf/0/properties/cellTrackingInfo/properties/id",
+                                                "type": "string",
+                                                "title": "The id schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    " tab"
+                                                ]
+                                            },
+                                            "type": {
+                                                "$id": "#/properties/suggestedTapTags/properties/items/items/anyOf/0/properties/cellTrackingInfo/properties/type",
+                                                "type": "string",
+                                                "title": "The type schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "suggest"
+                                                ]
+                                            },
+                                            "index": {
+                                                "$id": "#/properties/suggestedTapTags/properties/items/items/anyOf/0/properties/cellTrackingInfo/properties/index",
+                                                "type": "integer",
+                                                "title": "The index schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": 0,
+                                                "examples": [
+                                                    1
+                                                ]
+                                            },
+                                            "suggestType": {
+                                                "$id": "#/properties/suggestedTapTags/properties/items/items/anyOf/0/properties/cellTrackingInfo/properties/suggestType",
+                                                "type": "string",
+                                                "title": "The suggestType schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "autocomplete"
+                                                ]
+                                            },
+                                            "searchString": {
+                                                "$id": "#/properties/suggestedTapTags/properties/items/items/anyOf/0/properties/cellTrackingInfo/properties/searchString",
+                                                "type": "string",
+                                                "title": "The searchString schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "lenovo"
+                                                ]
+                                            },
+                                            "suggestValue": {
+                                                "$id": "#/properties/suggestedTapTags/properties/items/items/anyOf/0/properties/cellTrackingInfo/properties/suggestValue",
+                                                "type": "string",
+                                                "title": "The suggestValue schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    " tab"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
